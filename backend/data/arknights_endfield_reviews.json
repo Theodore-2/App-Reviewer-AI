@@ -1,0 +1,699 @@
+{
+  "app_name": "Arknights: Endfield",
+  "app_id": "6752642477",
+  "platform": "ios",
+  "locale": "en-US",
+  "total_reviews": 69,
+  "reviews": [
+    {
+      "review_id": "13655181777",
+      "rating": 1,
+      "date": "2026-01-20T04:43:16-07:00",
+      "locale": "en-US",
+      "title": "Crashes on start up and download doesn’t stop having errors",
+      "body": "Would love to play but it crashes like 3 to 4 times on start up and the download has errors like every gigabyte that causes me to restart it",
+      "body_cleaned": "Would love to play but it crashes like 3 to 4 times on start up and the download has errors like every gigabyte that causes me to restart it",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13655100558",
+      "rating": 5,
+      "date": "2026-01-20T04:14:56-07:00",
+      "locale": "en-US",
+      "title": "第一条评论！",
+      "body": "从内侧就开始玩，取代了一些自动化游戏。徐希望以后更新一些更好的自动化设施和更多的设备。",
+      "body_cleaned": "从内侧就开始玩，取代了一些自动化游戏。徐希望以后更新一些更好的自动化设施和更多的设备。",
+      "detected_language": "cjk"
+    },
+    {
+      "review_id": "13655019048",
+      "rating": 5,
+      "date": "2026-01-20T03:44:57-07:00",
+      "locale": "en-US",
+      "title": "First Review!",
+      "body": "As a long time player of the original Arknights, I am crazy excited for Endfield.\n\nHope it’s amazing!",
+      "body_cleaned": "As a long time player of the original Arknights, I am crazy excited for Endfield. Hope it’s amazing!",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654864972",
+      "rating": 1,
+      "date": "2026-01-20T02:42:18-07:00",
+      "locale": "en-US",
+      "title": "a \"great\" way to launch game with pre-release grind.",
+      "body": "what should've been the exciting lead-up to the launch of this game turned into a cynical several-weeks-long chore with daily claiming the resources and drawing the rewards for the game that still had eternity to be released. log in daily to click buttons, collect trivial resources. it was not a preview, but a tedious obligation that killed my interest before it even has been released. thank you for \"rewarding the community\"",
+      "body_cleaned": "what should've been the exciting lead-up to the launch of this game turned into a cynical several-weeks-long chore with daily claiming the resources and drawing the rewards for the game that still had eternity to be released. log in daily to click buttons, collect trivial resources. it was not a preview, but a tedious obligation that killed my interest before it even has been released. thank you for \"rewarding the community\"",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654759534",
+      "rating": 5,
+      "date": "2026-01-20T01:54:52-07:00",
+      "locale": "en-US",
+      "title": "Хз пока что писать",
+      "body": "Ну так с виду по бэтке и по остальным факторам ну и по ожиотажу могу сказать то что всё супер",
+      "body_cleaned": "Ну так с виду по бэтке и по остальным факторам ну и по ожиотажу могу сказать то что всё супер",
+      "detected_language": "ru"
+    },
+    {
+      "review_id": "13654729235",
+      "rating": 1,
+      "date": "2026-01-20T01:40:36-07:00",
+      "locale": "en-US",
+      "title": "Вылетает",
+      "body": "Не могу поставить оценку больше, так как на айфоне 7 серый экран, и игра потом просто вылетает:(",
+      "body_cleaned": "Не могу поставить оценку больше, так как на айфоне 7 серый экран, и игра потом просто вылетает:(",
+      "detected_language": "ru"
+    },
+    {
+      "review_id": "13654694639",
+      "rating": 5,
+      "date": "2026-01-20T01:24:08-07:00",
+      "locale": "en-US",
+      "title": "Whenfield is nowfield",
+      "body": "long live our glorious perlica",
+      "body_cleaned": "long live our glorious perlica",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654666824",
+      "rating": 5,
+      "date": "2026-01-20T01:10:42-07:00",
+      "locale": "en-US",
+      "title": "First",
+      "body": "One to review",
+      "body_cleaned": "One to review",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654653628",
+      "rating": 4,
+      "date": "2026-01-20T01:04:02-07:00",
+      "locale": "en-US",
+      "title": "Ошибка игра не загружается",
+      "body": "Пишет ( Не удалось получить конфигурацию сети проверьте подключение к сети и повторите попытку код ошибки 0) при этом с интернетом и сетью все в порядке",
+      "body_cleaned": "Пишет ( Не удалось получить конфигурацию сети проверьте подключение к сети и повторите попытку код ошибки 0) при этом с интернетом и сетью все в порядке",
+      "detected_language": "ru"
+    },
+    {
+      "review_id": "13654551577",
+      "rating": 1,
+      "date": "2026-01-20T00:13:24-07:00",
+      "locale": "en-US",
+      "title": "Fix your games goddamn bugs !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
+      "body": "Error messages start popping up like almost after 66% completed",
+      "body_cleaned": "Error messages start popping up like almost after 66% completed",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654325462",
+      "rating": 5,
+      "date": "2026-01-19T22:19:02-07:00",
+      "locale": "en-US",
+      "title": "i love it!!!!!!",
+      "body": "this is so cool game ty!!",
+      "body_cleaned": "this is so cool game ty!!",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654257837",
+      "rating": 5,
+      "date": "2026-01-19T21:44:48-07:00",
+      "locale": "en-US",
+      "title": "Best new game in 2026.",
+      "body": "This game may be the most exciting, hyped, fun, and intriguing game i’ve ever came across and played. It’s simply only one of many games that are worth playing and spending time on.",
+      "body_cleaned": "This game may be the most exciting, hyped, fun, and intriguing game i’ve ever came across and played. It’s simply only one of many games that are worth playing and spending time on.",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654235090",
+      "rating": 5,
+      "date": "2026-01-19T21:33:24-07:00",
+      "locale": "en-US",
+      "title": "I love miku",
+      "body": "Miku",
+      "body_cleaned": "Miku",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654073304",
+      "rating": 1,
+      "date": "2026-01-19T20:15:58-07:00",
+      "locale": "en-US",
+      "title": "Sad",
+      "body": "It keeps crashing every time I try to load the game up",
+      "body_cleaned": "It keeps crashing every time I try to load the game up",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654040269",
+      "rating": 5,
+      "date": "2026-01-19T20:00:54-07:00",
+      "locale": "en-US",
+      "title": "I’m Ready",
+      "body": "I don’t have much time but this will be the first arknights game I get into and hopefully last mobile game I touch i hope there’s some kind of offline mode at some point because I do a lot of traveling.",
+      "body_cleaned": "I don’t have much time but this will be the first arknights game I get into and hopefully last mobile game I touch i hope there’s some kind of offline mode at some point because I do a lot of traveling.",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13654020718",
+      "rating": 2,
+      "date": "2026-01-19T19:52:10-07:00",
+      "locale": "en-US",
+      "title": "Doesn’t install?",
+      "body": "Why does it just say “Exception encountered during file retrieval and/or writing. Please try again. (202)” instead of opening??",
+      "body_cleaned": "Why does it just say “Exception encountered during file retrieval and/or writing. Please try again. (202)” instead of opening??",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653997176",
+      "rating": 4,
+      "date": "2026-01-19T19:41:53-07:00",
+      "locale": "en-US",
+      "title": "Entering problem",
+      "body": "Trying to enter the game just results in kicking me out, I can hardly make it to the title screen before Im sent back to my Home Screen",
+      "body_cleaned": "Trying to enter the game just results in kicking me out, I can hardly make it to the title screen before Im sent back to my Home Screen",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653974308",
+      "rating": 5,
+      "date": "2026-01-19T19:31:53-07:00",
+      "locale": "en-US",
+      "title": "The Best Game Ive Ever Played",
+      "body": "Yeah so after playing for 200 hours safe to say this is the best gacha game i‘ve ever played.",
+      "body_cleaned": "Yeah so after playing for 200 hours safe to say this is the best gacha game i‘ve ever played.",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653969301",
+      "rating": 1,
+      "date": "2026-01-19T19:29:42-07:00",
+      "locale": "en-US",
+      "title": "Upon drop date",
+      "body": "Can’t even start the game lol yea no thanks",
+      "body_cleaned": "Can’t even start the game lol yea no thanks",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653962240",
+      "rating": 5,
+      "date": "2026-01-19T19:26:41-07:00",
+      "locale": "en-US",
+      "title": "Love this game",
+      "body": "Keep up the great work and don’t listen to the toxic hoyoverse players who doesn’t their toxic gay shippers who likes to ruined new games and make the characters gay when the developer never confirmed anything",
+      "body_cleaned": "Keep up the great work and don’t listen to the toxic hoyoverse players who doesn’t their toxic gay shippers who likes to ruined new games and make the characters gay when the developer never confirmed anything",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653956985",
+      "rating": 1,
+      "date": "2026-01-19T19:24:28-07:00",
+      "locale": "en-US",
+      "title": ".",
+      "body": "При достижении 65% обновления, вылетает ошибка и всё((",
+      "body_cleaned": "При достижении 65% обновления, вылетает ошибка и всё((",
+      "detected_language": "ru"
+    },
+    {
+      "review_id": "13653878696",
+      "rating": 5,
+      "date": "2026-01-19T18:51:27-07:00",
+      "locale": "en-US",
+      "title": "Knights are tuff",
+      "body": "Are we going to fight the savior?",
+      "body_cleaned": "Are we going to fight the savior?",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653792243",
+      "rating": 3,
+      "date": "2026-01-19T18:16:38-07:00",
+      "locale": "en-US",
+      "title": "Cant download 😞",
+      "body": "Wont get past like 11900 mb",
+      "body_cleaned": "Wont get past like 11900 mb",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653774017",
+      "rating": 1,
+      "date": "2026-01-19T18:09:28-07:00",
+      "locale": "en-US",
+      "title": "Dose not work",
+      "body": "Please fix the app I put the verification code in I does not work I keeps saying it’s wrong 😭😭😭😭",
+      "body_cleaned": "Please fix the app I put the verification code in I does not work I keeps saying it’s wrong 😭😭😭😭",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653714335",
+      "rating": 1,
+      "date": "2026-01-19T17:45:47-07:00",
+      "locale": "en-US",
+      "title": "Errores de descarga",
+      "body": "No puedo poner a descargar los datos del juego por qué cada 100 mb dice que \n‘Ocurrió un error de descarga reinventar ‘. \nEs muy molesto y me dan ganas de no siquiera probar el juego",
+      "body_cleaned": "No puedo poner a descargar los datos del juego por qué cada 100 mb dice que ‘Ocurrió un error de descarga reinventar ‘. Es muy molesto y me dan ganas de no siquiera probar el juego",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653699403",
+      "rating": 3,
+      "date": "2026-01-19T17:39:52-07:00",
+      "locale": "en-US",
+      "title": "Won’t work :(",
+      "body": "I’ve been waiting for this game for a while and I’m glad it’s finally here. But every time I try to open the app, it crashes. I’ve tried everything, I’ve re-set my iPad, re-set the app, deleted and re-downloaded the app, but nothing has worked. I don’t know if this is a bug, but if it is, please fix it! (Btw from what I’ve seen, the graphics look amazing!)",
+      "body_cleaned": "I’ve been waiting for this game for a while and I’m glad it’s finally here. But every time I try to open the app, it crashes. I’ve tried everything, I’ve re-set my iPad, re-set the app, deleted and re-downloaded the app, but nothing has worked. I don’t know if this is a bug, but if it is, please fix it! (Btw from what I’ve seen, the graphics look amazing!)",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653680262",
+      "rating": 5,
+      "date": "2026-01-19T17:32:24-07:00",
+      "locale": "en-US",
+      "title": "Q",
+      "body": "Мне нравится",
+      "body_cleaned": "Мне нравится",
+      "detected_language": "ru"
+    },
+    {
+      "review_id": "13653595624",
+      "rating": 1,
+      "date": "2026-01-19T16:58:49-07:00",
+      "locale": "en-US",
+      "title": "Broken from install",
+      "body": "The moment the game is installed it breaks! You can’t install the additional data! Reinstalls, restarts, nothing works! It’s totally broken!",
+      "body_cleaned": "The moment the game is installed it breaks! You can’t install the additional data! Reinstalls, restarts, nothing works! It’s totally broken!",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653593934",
+      "rating": 5,
+      "date": "2026-01-19T16:58:09-07:00",
+      "locale": "en-US",
+      "title": "I’m excited",
+      "body": "I haven’t played this yet but I’ve been waiting for it to come out so I hope it’s good",
+      "body_cleaned": "I haven’t played this yet but I’ve been waiting for it to come out so I hope it’s good",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653590556",
+      "rating": 1,
+      "date": "2026-01-19T16:56:49-07:00",
+      "locale": "en-US",
+      "title": "Don’t waste your time",
+      "body": "First day and already the server is down for two days? Seems like a rushed deadline. I very much hope that the rest of the game is not unprepared like the release.",
+      "body_cleaned": "First day and already the server is down for two days? Seems like a rushed deadline. I very much hope that the rest of the game is not unprepared like the release.",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653585281",
+      "rating": 5,
+      "date": "2026-01-19T16:54:44-07:00",
+      "locale": "en-US",
+      "title": "Can’t wait for the release",
+      "body": "I’m very excited for this game to come out and to get tons of free pulls and meet my favorite operators",
+      "body_cleaned": "I’m very excited for this game to come out and to get tons of free pulls and meet my favorite operators",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653574133",
+      "rating": 4,
+      "date": "2026-01-19T16:50:15-07:00",
+      "locale": "en-US",
+      "title": "Friendly feedback",
+      "body": "I know the game hasn’t launched yet and I love the startup music,the only problem I’m having is that while downloading the English language it says Exception encountered during file retrieval and/or writing. Please try again. (202)",
+      "body_cleaned": "I know the game hasn’t launched yet and I love the startup music,the only problem I’m having is that while downloading the English language it says Exception encountered during file retrieval and/or writing. Please try again. (202)",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653566624",
+      "rating": 1,
+      "date": "2026-01-19T16:47:14-07:00",
+      "locale": "en-US",
+      "title": "Error message",
+      "body": "My download won’t go passed 35%",
+      "body_cleaned": "My download won’t go passed 35%",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653542860",
+      "rating": 5,
+      "date": "2026-01-19T16:37:44-07:00",
+      "locale": "en-US",
+      "title": "First",
+      "body": "First LFG IVE OFFICIALLY PEAKED IN LIFE",
+      "body_cleaned": "First LFG IVE OFFICIALLY PEAKED IN LIFE",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653512343",
+      "rating": 4,
+      "date": "2026-01-19T16:25:22-07:00",
+      "locale": "en-US",
+      "title": "screen coated in my fluids!!",
+      "body": "These girls were just so fine, it instantly made me burst. -1 star because of how icky sticky my screen is",
+      "body_cleaned": "These girls were just so fine, it instantly made me burst. -1 star because of how icky sticky my screen is",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653511132",
+      "rating": 1,
+      "date": "2026-01-19T16:24:53-07:00",
+      "locale": "en-US",
+      "title": "Won’t let me play the game",
+      "body": "Red",
+      "body_cleaned": "Red",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653456803",
+      "rating": 5,
+      "date": "2026-01-19T16:03:12-07:00",
+      "locale": "en-US",
+      "title": "Best game ever",
+      "body": "This game is cool I guess",
+      "body_cleaned": "This game is cool I guess",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653452758",
+      "rating": 5,
+      "date": "2026-01-19T16:01:34-07:00",
+      "locale": "en-US",
+      "title": "Release ❤️",
+      "body": "Ill enjoy it im sure",
+      "body_cleaned": "Ill enjoy it im sure",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653447155",
+      "rating": 5,
+      "date": "2026-01-19T15:59:19-07:00",
+      "locale": "en-US",
+      "title": "amazing design",
+      "body": "This game is gorgeous!! Love it so much",
+      "body_cleaned": "This game is gorgeous!! Love it so much",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653445235",
+      "rating": 5,
+      "date": "2026-01-19T15:58:31-07:00",
+      "locale": "en-US",
+      "title": "Amazing",
+      "body": "Endfield is real",
+      "body_cleaned": "Endfield is real",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653428162",
+      "rating": 5,
+      "date": "2026-01-19T15:51:34-07:00",
+      "locale": "en-US",
+      "title": "IM THE FIRST",
+      "body": "It’s peak trust me",
+      "body_cleaned": "It’s peak trust me",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653426977",
+      "rating": 5,
+      "date": "2026-01-19T15:51:06-07:00",
+      "locale": "en-US",
+      "title": "I just know this is going to be peak",
+      "body": "I have nothing to report on this game since I haven't played yet but I've been excited ever since the trailer came out of the gameplay of this game, so I just really know this is going to be one of the best games Ive played yet on my phone",
+      "body_cleaned": "I have nothing to report on this game since I haven't played yet but I've been excited ever since the trailer came out of the gameplay of this game, so I just really know this is going to be one of the best games Ive played yet on my phone",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653426215",
+      "rating": 5,
+      "date": "2026-01-19T15:50:47-07:00",
+      "locale": "en-US",
+      "title": "Fun game",
+      "body": "i think this is fun",
+      "body_cleaned": "i think this is fun",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653424500",
+      "rating": 5,
+      "date": "2026-01-19T15:50:06-07:00",
+      "locale": "en-US",
+      "title": "Good system",
+      "body": "Gooner proof-ish",
+      "body_cleaned": "Gooner proof-ish",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653416147",
+      "rating": 5,
+      "date": "2026-01-19T15:46:44-07:00",
+      "locale": "en-US",
+      "title": "SHES 12???",
+      "body": "ZAMMMMNNNNN!!!!!",
+      "body_cleaned": "ZAMMMMNNNNN!!!!!",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653412380",
+      "rating": 5,
+      "date": "2026-01-19T15:45:13-07:00",
+      "locale": "en-US",
+      "title": "it’s released……",
+      "body": "RAHHHHH ARKNIGHTS FINALLY IVE BEEN WAITING FOR THIS MOMENT",
+      "body_cleaned": "RAHHHHH ARKNIGHTS FINALLY IVE BEEN WAITING FOR THIS MOMENT",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653408923",
+      "rating": 5,
+      "date": "2026-01-19T15:43:47-07:00",
+      "locale": "en-US",
+      "title": "W",
+      "body": "W game no glaze",
+      "body_cleaned": "W game no glaze",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653406243",
+      "rating": 5,
+      "date": "2026-01-19T15:42:44-07:00",
+      "locale": "en-US",
+      "title": "Goonfield",
+      "body": "Title.",
+      "body_cleaned": "Title.",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653403948",
+      "rating": 5,
+      "date": "2026-01-19T15:41:48-07:00",
+      "locale": "en-US",
+      "title": "idk",
+      "body": "i just wanted to make a review",
+      "body_cleaned": "i just wanted to make a review",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653403391",
+      "rating": 5,
+      "date": "2026-01-19T15:41:34-07:00",
+      "locale": "en-US",
+      "title": "Doi",
+      "body": "Sigma w game sigma love it",
+      "body_cleaned": "Sigma w game sigma love it",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653401643",
+      "rating": 5,
+      "date": "2026-01-19T15:40:51-07:00",
+      "locale": "en-US",
+      "title": "broo",
+      "body": "downloading it rn im so excited",
+      "body_cleaned": "downloading it rn im so excited",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653401556",
+      "rating": 5,
+      "date": "2026-01-19T15:40:49-07:00",
+      "locale": "en-US",
+      "title": "This game kinda fire",
+      "body": "Ya, ya.",
+      "body_cleaned": "Ya, ya.",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653400741",
+      "rating": 5,
+      "date": "2026-01-19T15:40:29-07:00",
+      "locale": "en-US",
+      "title": "La primera reseña",
+      "body": "Está hermoso. Lo mejor que he visto en gachas semi-abiertos. Me recuerda a Zenless zone zero porque está muy inspirado aunque sé que Arknight:Endfield se estaba creando primero.\nRecuerden:LA PRIMERA RESEÑA\nEN ESPAÑOL DE ARKNIGHT:ENDFIELD",
+      "body_cleaned": "Está hermoso. Lo mejor que he visto en gachas semi-abiertos. Me recuerda a Zenless zone zero porque está muy inspirado aunque sé que Arknight:Endfield se estaba creando primero. Recuerden:LA PRIMERA RESEÑA EN ESPAÑOL DE ARKNIGHT:ENDFIELD",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653399719",
+      "rating": 5,
+      "date": "2026-01-19T15:40:04-07:00",
+      "locale": "en-US",
+      "title": "first review, and good game 👍🏽",
+      "body": "that’s all i gotta say",
+      "body_cleaned": "that’s all i gotta say",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653396461",
+      "rating": 5,
+      "date": "2026-01-19T15:38:48-07:00",
+      "locale": "en-US",
+      "title": "🤗🤗🤗",
+      "body": "Love",
+      "body_cleaned": "Love",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653395584",
+      "rating": 5,
+      "date": "2026-01-19T15:38:28-07:00",
+      "locale": "en-US",
+      "title": "Fyre",
+      "body": "Fyre",
+      "body_cleaned": "Fyre",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653394544",
+      "rating": 5,
+      "date": "2026-01-19T15:38:03-07:00",
+      "locale": "en-US",
+      "title": ".",
+      "body": "Ща попробуем",
+      "body_cleaned": "Ща попробуем",
+      "detected_language": "ru"
+    },
+    {
+      "review_id": "13653394187",
+      "rating": 5,
+      "date": "2026-01-19T15:37:54-07:00",
+      "locale": "en-US",
+      "title": "American boy feat k west",
+      "body": "La la ala",
+      "body_cleaned": "La la ala",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653393956",
+      "rating": 5,
+      "date": "2026-01-19T15:37:48-07:00",
+      "locale": "en-US",
+      "title": "1st review",
+      "body": "1st review",
+      "body_cleaned": "1st review",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653393699",
+      "rating": 5,
+      "date": "2026-01-19T15:37:42-07:00",
+      "locale": "en-US",
+      "title": "OMGYATT",
+      "body": "is it finally here??!!!",
+      "body_cleaned": "is it finally here??!!!",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653392468",
+      "rating": 5,
+      "date": "2026-01-19T15:37:13-07:00",
+      "locale": "en-US",
+      "title": "Amazing game!",
+      "body": "I absolutely love this game, but it would not be a game I play all the time",
+      "body_cleaned": "I absolutely love this game, but it would not be a game I play all the time",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653392287",
+      "rating": 5,
+      "date": "2026-01-19T15:37:09-07:00",
+      "locale": "en-US",
+      "title": "game released",
+      "body": "this is peak",
+      "body_cleaned": "this is peak",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653392222",
+      "rating": 5,
+      "date": "2026-01-19T15:37:07-07:00",
+      "locale": "en-US",
+      "title": "Amazing game!",
+      "body": "I absolutely loved this game, it was incredible! I look forward to its continued support.😊",
+      "body_cleaned": "I absolutely loved this game, it was incredible! I look forward to its continued support.😊",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653390681",
+      "rating": 5,
+      "date": "2026-01-19T15:36:31-07:00",
+      "locale": "en-US",
+      "title": "Peak",
+      "body": "ITS PEAK WHAT CAN I SAY???",
+      "body_cleaned": "ITS PEAK WHAT CAN I SAY???",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653390492",
+      "rating": 5,
+      "date": "2026-01-19T15:36:27-07:00",
+      "locale": "en-US",
+      "title": "Let’s see how it goes",
+      "body": "Pending actual review just wanted to be first",
+      "body_cleaned": "Pending actual review just wanted to be first",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653390011",
+      "rating": 5,
+      "date": "2026-01-19T15:36:15-07:00",
+      "locale": "en-US",
+      "title": "First",
+      "body": "Ahaaaaaa but I have not played yet will update when I do",
+      "body_cleaned": "Ahaaaaaa but I have not played yet will update when I do",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653389338",
+      "rating": 5,
+      "date": "2026-01-19T15:35:59-07:00",
+      "locale": "en-US",
+      "title": "BEST HAME TO EVER EXIST",
+      "body": "i haven’t played it but it’s the best game to ever exist😭😭🤑🤑🤑🤑🤑🤑🤑😍😍😍😍😍😍🇵🇸🇵🇸🇵🇸😍😍😍😍😍😍😍",
+      "body_cleaned": "i haven’t played it but it’s the best game to ever exist😭😭🤑🤑🤑🤑🤑🤑🤑😍😍😍😍😍😍🇵🇸🇵🇸🇵🇸😍😍😍😍😍😍😍",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653389209",
+      "rating": 5,
+      "date": "2026-01-19T15:35:57-07:00",
+      "locale": "en-US",
+      "title": "Very skibidi sigma",
+      "body": "This app is so sigma and I love it 10/10 I love you arknights CITY BOIII CITY BOIIII",
+      "body_cleaned": "This app is so sigma and I love it 10/10 I love you arknights CITY BOIII CITY BOIIII",
+      "detected_language": "en"
+    },
+    {
+      "review_id": "13653388353",
+      "rating": 5,
+      "date": "2026-01-19T15:35:35-07:00",
+      "locale": "en-US",
+      "title": "Noice",
+      "body": "First",
+      "body_cleaned": "First",
+      "detected_language": "en"
+    }
+  ]
+}

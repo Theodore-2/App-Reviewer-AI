@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: review_app_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    env_file:
+      - ./backend/.env
+    depends_on:
+      - redis
+    networks:
+      - review_app_network
+
+  frontend:
+    build: ./frontend
+    container_name: review_app_frontend
+    ports:
+      - "3000:80"
+    networks:
+      - review_app_network
+
+  redis:
+    image: redis:alpine
+    container_name: review_app_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - review_app_network
+
+networks:
+  review_app_network:
+    driver: bridge
+
+volumes:
+  redis_data:
