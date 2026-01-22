@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Reviewer AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">📱</span>
+                    <h1>App Reviewer AI</h1>
+                </div>
+                <p class="tagline">Turn app reviews into actionable insights</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Input Section -->
+            <section class="input-section glass-card">
+                <h2>Fetch App Reviews</h2>
+
+                <div class="form-group">
+                    <label for="appUrl">App Store URL</label>
+                    <input type="text" id="appUrl" placeholder="https://apps.apple.com/us/app/app-name/id123456789"
+                        class="input">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="locale">Region</label>
+                        <select id="locale" class="select">
+                            <option value="en-US">🇺🇸 United States</option>
+                            <option value="en-GB">🇬🇧 United Kingdom</option>
+                            <option value="de-DE">🇩🇪 Germany</option>
+                            <option value="fr-FR">🇫🇷 France</option>
+                            <option value="es-ES">🇪🇸 Spain</option>
+                            <option value="it-IT">🇮🇹 Italy</option>
+                            <option value="pt-BR">🇧🇷 Brazil</option>
+                            <option value="ja-JP">🇯🇵 Japan</option>
+                            <option value="ko-KR">🇰🇷 South Korea</option>
+                            <option value="zh-CN">🇨🇳 China</option>
+                            <option value="tr-TR">🇹🇷 Turkey</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="limit">Review Limit</label>
+                        <select id="limit" class="select">
+                            <option value="50">50 reviews</option>
+                            <option value="100" selected>100 reviews</option>
+                            <option value="200">200 reviews</option>
+                            <option value="500">500 reviews (max)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <button id="fetchBtn" class="btn btn-primary">
+                        <span class="btn-icon">🔍</span>
+                        Fetch Reviews
+                    </button>
+                    <button id="analyzeBtn" class="btn btn-secondary" disabled>
+                        <span class="btn-icon">🤖</span>
+                        Run AI Analysis
+                    </button>
+                </div>
+            </section>
+
+            <!-- Loading State -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Fetching reviews...</p>
+            </div>
+
+            <!-- Error State -->
+            <div id="error" class="error-banner hidden">
+                <span>⚠️</span>
+                <p id="errorMessage"></p>
+                <button id="closeError" class="close-btn">×</button>
+            </div>
+
+            <!-- Results Section -->
+            <section id="results" class="results-section hidden">
+                <!-- Stats Cards -->
+                <div class="stats-row">
+                    <div class="stat-card glass-card">
+                        <span class="stat-icon">📱</span>
+                        <div class="stat-content">
+                            <h3 id="appName">-</h3>
+                            <p>App Name</p>
+                        </div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <span class="stat-icon">📝</span>
+                        <div class="stat-content">
+                            <h3 id="reviewCount">0</h3>
+                            <p>Reviews Fetched</p>
+                        </div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <span class="stat-icon">⭐</span>
+                        <div class="stat-content">
+                            <h3 id="avgRating">-</h3>
+                            <p>Avg Rating</p>
+                        </div>
+                    </div>
+                    <div class="stat-card glass-card">
+                        <span class="stat-icon">🌍</span>
+                        <div class="stat-content">
+                            <h3 id="localeDisplay">-</h3>
+                            <p>Region</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rating Distribution Chart -->
+                <div class="chart-section glass-card">
+                    <h3>Rating Distribution</h3>
+                    <div class="rating-chart" id="ratingChart">
+                        <div class="rating-bar-row">
+                            <span class="rating-label">5 ⭐</span>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar" id="bar5" style="width: 0%"></div>
+                            </div>
+                            <span class="rating-count" id="count5">0</span>
+                        </div>
+                        <div class="rating-bar-row">
+                            <span class="rating-label">4 ⭐</span>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar" id="bar4" style="width: 0%"></div>
+                            </div>
+                            <span class="rating-count" id="count4">0</span>
+                        </div>
+                        <div class="rating-bar-row">
+                            <span class="rating-label">3 ⭐</span>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar" id="bar3" style="width: 0%"></div>
+                            </div>
+                            <span class="rating-count" id="count3">0</span>
+                        </div>
+                        <div class="rating-bar-row">
+                            <span class="rating-label">2 ⭐</span>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar" id="bar2" style="width: 0%"></div>
+                            </div>
+                            <span class="rating-count" id="count2">0</span>
+                        </div>
+                        <div class="rating-bar-row">
+                            <span class="rating-label">1 ⭐</span>
+                            <div class="rating-bar-container">
+                                <div class="rating-bar negative" id="bar1" style="width: 0%"></div>
+                            </div>
+                            <span class="rating-count" id="count1">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="actions-row">
+                    <button id="downloadBtn" class="btn btn-success">
+                        <span class="btn-icon">⬇️</span>
+                        Download JSON
+                    </button>
+                </div>
+
+                <!-- Reviews Grid -->
+                <div class="reviews-header">
+                    <h2>Reviews</h2>
+                    <div class="filter-row">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="5">⭐ 5</button>
+                        <button class="filter-btn" data-filter="4">⭐ 4</button>
+                        <button class="filter-btn" data-filter="3">⭐ 3</button>
+                        <button class="filter-btn" data-filter="2">⭐ 2</button>
+                        <button class="filter-btn" data-filter="1">⭐ 1</button>
+                    </div>
+                </div>
+
+                <div id="reviewsGrid" class="reviews-grid">
+                    <!-- Reviews will be inserted here -->
+                </div>
+            </section>
+
+            <!-- Analysis Section -->
+            <section id="analysisSection" class="analysis-section hidden">
+                <div class="glass-card">
+                    <h2>AI Analysis</h2>
+                    <div id="analysisStatus" class="analysis-status">
+                        <div class="progress-bar">
+                            <div id="progressFill" class="progress-fill" style="width: 0%"></div>
+                        </div>
+                        <p id="statusText">Ready</p>
+                    </div>
+                    <div id="analysisResult" class="analysis-result hidden">
+                        <!-- Results will be inserted here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>App Reviewer AI © 2026</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
