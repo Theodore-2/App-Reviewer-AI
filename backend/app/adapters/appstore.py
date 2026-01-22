@@ -20,13 +20,13 @@ logger = logging.getLogger(__name__)
 class AppStoreAdapter(BaseAdapter):
     """iOS App Store review adapter using RSS feed."""
     
-    # RSS feed URL template
-    RSS_URL = "https://itunes.apple.com/{country}/rss/customerreviews/id={app_id}/sortBy=mostRecent/page={page}/xml"
+    # RSS feed URL template (JSON for structured parsing)
+    RSS_URL = "https://itunes.apple.com/{country}/rss/customerreviews/id={app_id}/sortBy=mostRecent/page={page}/json"
     
     # Lookup API for validation
     LOOKUP_URL = "https://itunes.apple.com/lookup?id={app_id}&country={country}"
     
-    # Country code mapping from locale
+    # Expanded Country code mapping from locale
     LOCALE_TO_COUNTRY = {
         "en-US": "us",
         "en-GB": "gb",
@@ -38,6 +38,7 @@ class AppStoreAdapter(BaseAdapter):
         "it-IT": "it",
         "pt-BR": "br",
         "ko-KR": "kr",
+        "tr-TR": "tr",
     }
     
     @property
@@ -45,8 +46,15 @@ class AppStoreAdapter(BaseAdapter):
         return "ios"
     
     def _get_country(self, locale: str) -> str:
-        """Convert locale to country code."""
-        return self.LOCALE_TO_COUNTRY.get(locale, "us")
+        """Convert locale to country code with fallback to extraction."""
+        if locale in self.LOCALE_TO_COUNTRY:
+            return self.LOCALE_TO_COUNTRY[locale]
+            
+        # Try to extract country from locale format (e.g., 'en-US' -> 'us', 'tr-TR' -> 'tr')
+        if "-" in locale:
+            return locale.split("-")[-1].lower()
+        
+        return "us"
     
     @retry(
         stop=stop_after_attempt(3),
@@ -67,63 +75,68 @@ class AppStoreAdapter(BaseAdapter):
         
         async with httpx.AsyncClient(timeout=30.0) as client:
             response = await client.get(url)
+            
+            # If 404, it might mean no more pages or invalid app/region combination
+            if response.status_code == 404:
+                return []
+                
             response.raise_for_status()
             
-            return self._parse_rss(response.text)
+            return self._parse_json(response.json())
     
-    def _parse_rss(self, xml_content: str) -> List[Review]:
-        """Parse RSS XML into Review objects."""
+    def _parse_json(self, data: dict) -> List[Review]:
+        """Parse RSS JSON into Review objects."""
         reviews = []
         
         try:
-            # Define namespaces
-            namespaces = {
-                "atom": "http://www.w3.org/2005/Atom",
-                "im": "http://itunes.apple.com/rss"
-            }
+            feed = data.get("feed", {})
+            entries = feed.get("entry", [])
             
-            root = ET.fromstring(xml_content)
+            # Handle case where entries is a dict (single review) or list
+            if isinstance(entries, dict):
+                entries = [entries]
             
-            # Find all entry elements (reviews)
-            for entry in root.findall(".//atom:entry", namespaces):
+            for entry in entries:
+                # The first entry in 'entry' list might be app info metadata if fetched from /json
+                # But customer reviews feed usually has reviews in entry.
+                # If there's no 'im:rating', it might be metadata, skip it.
+                if "im:rating" not in entry:
+                    continue
+                
                 try:
-                    # Extract review data
-                    review_id = entry.find("atom:id", namespaces)
-                    title = entry.find("atom:title", namespaces)
-                    content = entry.find("atom:content[@type='text']", namespaces)
-                    rating = entry.find("im:rating", namespaces)
-                    updated = entry.find("atom:updated", namespaces)
+                    review_id = entry.get("id", {}).get("label")
+                    title = entry.get("title", {}).get("label")
+                    content = entry.get("content", {}).get("label")
+                    rating = entry.get("im:rating", {}).get("label")
+                    updated = entry.get("updated", {}).get("label")
                     
-                    # Skip entries without content (like feed metadata)
-                    if content is None or content.text is None:
+                    if not content:
                         continue
                     
                     # Parse date
-                    date_str = updated.text if updated is not None else None
                     try:
                         review_date = datetime.fromisoformat(
-                            date_str.replace("Z", "+00:00")
-                        ) if date_str else datetime.utcnow()
+                            updated.replace("Z", "+00:00")
+                        ) if updated else datetime.utcnow()
                     except:
                         review_date = datetime.utcnow()
                     
                     review = Review(
-                        review_id=review_id.text if review_id is not None else f"unknown_{len(reviews)}",
-                        rating=int(rating.text) if rating is not None else 3,
+                        review_id=review_id if review_id else f"unknown_{len(reviews)}",
+                        rating=int(rating) if rating else 3,
                         date=review_date,
                         locale="en-US",  # Will be set by caller
-                        title=title.text if title is not None else None,
-                        body=content.text
+                        title=title if title else None,
+                        body=content
                     )
                     
                     reviews.append(review)
-                    
                 except Exception as e:
                     logger.warning(f"Failed to parse review entry: {e}")
                     continue
                     
-        except ET.ParseError as e:
-            logger.error(f"Failed to parse RSS XML: {e}")
+        except Exception as e:
+            logger.error(f"Failed to parse RSS JSON: {e}")
         
         return reviews
     
