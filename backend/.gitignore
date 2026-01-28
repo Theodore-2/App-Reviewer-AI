@@ -49,4 +49,4 @@ htmlcov/
 Thumbs.db
 
 
-app_reviewer_api.txt
+backend/data/
