@@ -1,3 +1,10 @@
+# General
+.DS_Store
+.vscode/
+.idea/
+*.log
+tmp/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -19,35 +26,29 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # Virtual Environment
 venv/
 env/
 ENV/
+.venv/
 
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
+# Node/Frontend
+node_modules/
+npm-debug.log
+yarn-error.log
+.npm/
 
-# Environment
+# Backend specific
+backend/data/
+backend/.env
+backend/.env.local
+
+# Root environment
 .env
-.env.local
-.env.*.local
 
 # Testing
 .pytest_cache/
 .coverage
 htmlcov/
-
-# Logs
-*.log
-
-# OS
-.DS_Store
-Thumbs.db
-
-
-data/
-tests/
